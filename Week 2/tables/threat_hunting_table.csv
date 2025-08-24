@@ -1,0 +1,2 @@
+Timestamp,Process,Command Line,Notes
+2025-08-18 10:00:00,powershell.exe,-Command Write-Host,Suspicious execution

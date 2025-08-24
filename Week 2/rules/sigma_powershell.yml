@@ -1,0 +1,13 @@
+title: Suspicious PowerShell Activity
+id: 5b9d3b8e-0001-4f0a-b20b-000000000001
+description: Detects PowerShell executions using -Command
+status: experimental
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+    Image|endswith: '\powershell.exe'
+    CommandLine|contains: '-Command'
+  condition: selection
+level: medium
